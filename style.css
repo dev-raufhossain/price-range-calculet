@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container_range{
+    text-align: center;
+    justify-content: center;
+    
+    max-width: 665px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1); 
+    padding:20px;      
+    
+}
+.user_title{
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: -0.25px;
+    margin-bottom: 10px;
+
+}
+
+#get {
+    display: inline-block;
+    width: 75%;
+    margin: 0;
+    height: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    
+} 
+input[type="range" i] {
+    appearance: auto;
+    cursor: default;
+    color: -internal-light-dark(rgb(16, 16, 16), rgb(255, 255, 255));
+    padding: initial;
+    border: initial;
+    margin: 2px;
+}
+
+input{
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+}
+.price_module{
+    display: block;
+    columns: black;
+    margin-bottom: 30px;
+}
+
+#put {
+    width: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #2F8BAA;
+    overflow: hidden;
+}
+.pirce_anual{
+    color: #2F8BAA;
+    font-family: 'Arial', sans-serif;
+    font-size: 72px;
+    font-weight: bold;
+    letter-spacing: -2px; 
+    line-height: 1; 
+    margin-bottom: 20px;
+    
+}
+.price_doller{
+    position: relative;
+    bottom: 30px;
+    font-size: x-large;
+}
+.avarage_subText p{
+    margin: 20px;
+    font-size: 16px;
+    color: black;
+    display: block;
+    font-family: 'Arial', sans-serif;
+}
+
+.monthly-price {
+    font-size: 14px;
+    font-style: italic;
+    color: #626F78;
+    margin-bottom: 0;
+}
+

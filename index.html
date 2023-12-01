@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User </title>
+</head>
+<body>
+    <div class="container_range">
+        <div class="card_range">
+            <div class="card-header">
+
+            </div>
+            <div class="card-body">
+                <h2 class="user_title">Product 1: J-strut</h2>
+                <form action="" method="post">
+                    <input type="range" name="get" id="get" step="1" min="0" max="30" value="1"><br>
+                    <div class="price_module">
+                        Pricing for
+                        <input type="text" name="put" id="put" value="1">
+                        J-strut: :
+                    </div>
+
+                </form>
+                <div class="price">
+                    <sup class="price_doller">$</sup> <span id="monthPrice" class="pirce_anual">44.95                    </span>
+
+                </div>
+                <div class="avarage_subText">
+                    <p>Per Product pis</p>
+                </div>
+                <div class="monthly-price ">
+                    <h1>$ <span id="total_price">44.95</span> total Price</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--     <script>
+    const rengeInput = document.getElementById('put');
+    const textInput = document.getElementById('get');
+    const monthPrice = document.getElementById('monthPrice');
+    const total_price = document.getElementById('total_price');
+
+    rengeInput.addEventListener('input', function() {
+        textInput.value = rengeInput.value;
+        const rengeValue = parseInt(rengeInput.value);
+        if (rengeValue>=1 &&  rengeValue<= 27) {
+            monthPrice.textContent = 16;
+            total_price.textContent = rengeValue * 16 ;
+
+        }else if(rengeValue >= 28 && rengeValue <= 35){
+            monthPrice.textContent ="15";
+            total_price.textContent = rengeValue * 15 ;
+
+
+        }else if(rengeValue >= 36 && rengeValue <= 50){
+            monthPrice.textContent ="14";
+            total_price.textContent = rengeValue * 14 ;
+
+
+        }else if(rengeValue >= 51 && rengeValue <= 76){
+            monthPrice.textContent ="13";
+            total_price.textContent = rengeValue * 13 ;
+
+
+        }else if(rengeValue >= 77 && rengeValue <= 90){
+            monthPrice.textContent ="12";
+            total_price.textContent = rengeValue * 12 ;
+
+
+        }else if(rengeValue >= 91 && rengeValue <= 111){
+            monthPrice.textContent ="11";
+            total_price.textContent = rengeValue * 11 ;
+
+
+        }else if(rengeValue >= 112 && rengeValue <= 138){
+            monthPrice.textContent ="10";
+            total_price.textContent = rengeValue * 10 ;
+
+
+        }else if(rengeValue >= 139 && rengeValue <= 178){
+            monthPrice.textContent ="9";
+            total_price.textContent = rengeValue * 9 ;
+
+        }else if(rengeValue >= 179 && rengeValue <= 250){
+            monthPrice.textContent ="8";
+            total_price.textContent = rengeValue * 8 ;
+
+        }else if(rengeValue >= 251 && rengeValue <= 350){
+            monthPrice.textContent ="7";
+            total_price.textContent = rengeValue * 7 ;
+
+        }else if(rengeValue >= 351 && rengeValue <= 550){
+            monthPrice.textContent ="6";
+            total_price.textContent = rengeValue * 6 ;
+        }else if(rengeValue >= 551 && rengeValue <= 916){
+            monthPrice.textContent ="5";
+            total_price.textContent = rengeValue * 5 ;
+
+        }else if(rengeValue >= 917 && rengeValue <= 1000){
+            monthPrice.textContent ="4";
+            total_price.textContent = rengeValue * 4 ;
+        }
+         else {
+            // Set a default value or handle other cases here
+            monthPrice.textContent = "N/A";
+        }
+        
+    })
+    textInput.addEventListener('input', function() {
+        rengeInput.value = textInput.value;
+        const inputValue = parseFloat(textInput.value);
+        if (inputValue>=1 &&  inputValue<= 27) {
+            monthPrice.textContent = 16;
+            total_price.textContent = inputValue * 16 ;
+        }else if(inputValue >= 28 && inputValue <= 35){
+            monthPrice.textContent ="15";
+            total_price.textContent = inputValue * 15 ;
+        }else if(inputValue >= 36 && inputValue <= 50){
+            monthPrice.textContent ="14";
+            total_price.textContent = inputValue * 14 ;
+        }else if(inputValue >= 51 && inputValue <= 76){
+            monthPrice.textContent ="13";
+            total_price.textContent = inputValue * 13 ;
+        }else if(inputValue >= 77 && inputValue <= 90){
+            monthPrice.textContent ="12";
+            total_price.textContent = inputValue * 12 ;
+        }else if(inputValue >= 91 && inputValue <= 111){
+            monthPrice.textContent ="11";
+            total_price.textContent = inputValue * 11 ;
+        }else if(inputValue >= 112 && inputValue <= 138){
+            monthPrice.textContent ="10";
+            total_price.textContent = inputValue * 10 ;
+        }else if(inputValue >= 139 && inputValue <= 178){
+            monthPrice.textContent ="9";
+            total_price.textContent = inputValue * 9 ;
+        }else if(inputValue >= 179 && inputValue <= 250){
+            monthPrice.textContent ="8";
+            total_price.textContent = inputValue * 8 ;
+        }else if(inputValue >= 251 && inputValue <= 350){
+            monthPrice.textContent ="7";
+            total_price.textContent = inputValue * 7 ;
+        }else if(inputValue >= 351 && inputValue <= 550){
+            monthPrice.textContent ="6";
+            total_price.textContent = inputValue * 6 ;
+        }else if(inputValue >= 551 && inputValue <= 916){
+            monthPrice.textContent ="5";
+            total_price.textContent = inputValue * 5 ;
+}else if(inputValue >= 917 && inputValue <= 1000){
+            monthPrice.textContent ="4";
+            total_price.textContent = inputValue * 4 ;
+
+        }
+         else {
+            // Set a default value or handle other cases here
+            monthPrice.textContent = "N/A";
+        }
+        
+    })
+    
+    </script> -->
+
+
+
+     
+    <script>
+         const rengeInput = document.getElementById('put');
+        const textInput = document.getElementById('get');
+        const monthPrice = document.getElementById('monthPrice');
+        const total_price = document.getElementById('total_price');
+    
+/*         rengeInput.addEventListener('input', function() {
+            textInput.value = rengeInput.value;
+            const rengeValue = parseInt(rengeInput.value);
+            if (rengeValue<=0) {
+            monthPrice.textContent = 'NaN';
+            total_price.textContent = rengeValue * 44.95;
+        }
+            else if (rengeValue>=1 &&  rengeValue<= 4) {
+                monthPrice.textContent = 44.95;
+                total_price.textContent = rengeValue * 44.95;
+    
+            }else if(rengeValue >= 28 && rengeValue <= 35){
+                monthPrice.textContent ="15";
+                total_price.textContent = rengeValue * 15 ;
+    
+    
+            }else if(rengeValue >= 36 && rengeValue <= 50){
+                monthPrice.textContent ="14";
+                total_price.textContent = rengeValue * 14 ;
+    
+    
+            }else if(rengeValue >= 51 && rengeValue <= 76){
+                monthPrice.textContent ="13";
+                total_price.textContent = rengeValue * 13 ;
+    
+    
+            }else if(rengeValue >= 77 && rengeValue <= 90){
+                monthPrice.textContent ="12";
+                total_price.textContent = rengeValue * 12 ;
+    
+    
+            }else if(rengeValue >= 91 && rengeValue <= 111){
+                monthPrice.textContent ="11";
+                total_price.textContent = rengeValue * 11 ;
+    
+    
+            }else if(rengeValue >= 112 && rengeValue <= 138){
+                monthPrice.textContent ="10";
+                total_price.textContent = rengeValue * 10 ;
+    
+    
+            }else if(rengeValue >= 139 && rengeValue <= 178){
+                monthPrice.textContent ="9";
+                total_price.textContent = rengeValue * 9 ;
+    
+            }else if(rengeValue >= 179 && rengeValue <= 250){
+                monthPrice.textContent ="8";
+                total_price.textContent = rengeValue * 8 ;
+    
+            }else if(rengeValue >= 251 && rengeValue <= 350){
+                monthPrice.textContent ="7";
+                total_price.textContent = rengeValue * 7 ;
+    
+            }else if(rengeValue >= 351 && rengeValue <= 550){
+                monthPrice.textContent ="6";
+                total_price.textContent = rengeValue * 6 ;
+            }else if(rengeValue >= 551 && rengeValue <= 916){
+                monthPrice.textContent ="5";
+                total_price.textContent = rengeValue * 5 ;
+    
+            }else if(rengeValue >= 917 && rengeValue <= 1000){
+                monthPrice.textContent ="4";
+                total_price.textContent = rengeValue * 4 ;
+            }
+             else {
+                // Set a default value or handle other cases here
+                monthPrice.textContent = "N/A";
+            }
+            
+        })  */
+
+        textInput.addEventListener('input', function() {
+            rengeInput.value = textInput.value;
+            const inputValue = parseFloat(textInput.value);
+            if (inputValue<=0) {
+            monthPrice.textContent = 'NaN';
+            total_price.textContent = inputValue * 44.95 ;
+
+        }
+        else if (inputValue>=1 &&  inputValue<= 4) {
+                monthPrice.textContent = "44.95";
+                total_price.textContent = inputValue * 44.95 ;
+            }else if(inputValue >= 5 && inputValue <= 9){
+                monthPrice.textContent ="42.50";
+                total_price.textContent = inputValue * 42.50 ;
+            }else if(inputValue >= 10 && inputValue <= 14){
+                monthPrice.textContent ="39.95";
+                total_price.textContent = inputValue * 39.95;
+            }else if(inputValue >= 15 && inputValue <= 19){
+                monthPrice.textContent ="39.50";
+                total_price.textContent = inputValue * 39.50 ;
+            }else if(inputValue >= 20 && inputValue <= 24){
+                monthPrice.textContent ="39.00";
+                total_price.textContent = inputValue * 39.00;
+            }else if(inputValue >= 25 && inputValue <= 29){
+                monthPrice.textContent ="38.50";
+                total_price.textContent = inputValue * 38.50 ;
+            }else if(inputValue >= 30 && inputValue <= 10000){
+                monthPrice.textContent ="38.20";
+                total_price.textContent = inputValue * 38.20 ;
+            }
+             else {
+                // Set a default value or handle other cases here
+                monthPrice.textContent = "N/A";
+            }
+            
+        })
+        
+        </script>
+    
+    
+    
+    
+</body>
+
+</html>
